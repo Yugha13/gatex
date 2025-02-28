@@ -2,6 +2,13 @@
 
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
+import { Button } from "./ui/button"
+import SplitText from "./SplitText";
+
+
+const handleAnimationComplete = () => {
+  console.log('All letters have animated!');
+};
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null)
@@ -44,9 +51,19 @@ export function Hero() {
           transition={{ delay: 0.2 }}
           className="text-6xl md:text-8xl font-bold tracking-tight text-white"
         >
-          Make it real with
+          Explore Your Dream
           <br />
-          <span className="italic">Infinite Creator</span>
+
+          <SplitText
+            text="GATEX"
+            className="italic text-6xl md:text-8xl font-bold tracking-tight text-orange-500"
+            delay={150}
+            animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+            animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+            threshold={0.2}
+            rootMargin="-50px"
+            onLetterAnimationComplete={handleAnimationComplete}
+          />
         </motion.h1>
         <motion.p
           initial={{ y: 20, opacity: 0 }}
@@ -54,9 +71,20 @@ export function Hero() {
           transition={{ delay: 0.4 }}
           className="mt-6 text-xl text-zinc-200 max-w-2xl"
         >
-          A new fluid medium to create stunning images and videos that feel out of this world. All you need to do is
-          imagine.
+          Find your perfect space with our curated selection of rooms for rent. From cozy apartments to spacious houses, we've got you covered.
         </motion.p>
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.6 }}
+          className="mt-6"
+        >
+          <Button
+            className="px-5 py-3 text-white"
+          >
+            Browse Rooms
+          </Button>
+        </motion.div>
       </motion.div>
     </div>
   )

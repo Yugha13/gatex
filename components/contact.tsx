@@ -48,24 +48,24 @@ export default function Contact() {
         className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden"
       >
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold">Contact Us</h2>
+          <h2 className="text-3xl font-bold">Contact GATEX</h2>
         </div>
         <div className="md:flex">
           <div className="md:w-1/2 bg-[#3D0C11] p-12 text-white">
             <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
-            <p className="mb-6">We're here to help and answer any question you might have. We look forward to hearing from you.</p>
+            <p className="mb-6">We're here to help you with your room rental needs. Reach out to us!</p>
             <div className="space-y-4">
               <p className="flex items-center">
                 <Send size={20} className="mr-2" />
-                info@modiaproperties.com
+                info@gatex.com
               </p>
               <p className="flex items-center">
                 <Send size={20} className="mr-2" />
-                +234 803 974 3274
+                +123 456 7890
               </p>
               <p className="flex items-center">
                 <Send size={20} className="mr-2" />
-                No 2 Michika street off Ahmadu Bello way Area 11 Garki Abuja Nigeria
+                123 Rental St, City, Country
               </p>
             </div>
           </div>

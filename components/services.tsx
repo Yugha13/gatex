@@ -6,18 +6,18 @@ import { useRef } from "react"
 const services: Service[] = [
   {
     id: '01',
-    title: 'Property Sales',
-    description: 'Assisting clients in buying and selling residential, commercial, and investment properties.',
+    title: 'Room Rentals',
+    description: 'Find the perfect room for your stay with our extensive listings.',
   },
   {
     id: '02',
-    title: 'Property Rentals',
-    description: 'Connecting landlords with tenants and managing rental agreements.',
+    title: 'Short-term Rentals',
+    description: 'Flexible rental options for short stays in prime locations.',
   },
   {
     id: '03',
-    title: 'Property Management',
-    description: 'Handling day-to-day operations, maintenance, and budget relations for property owners.',
+    title: 'Long-term Rentals',
+    description: 'Secure long-term accommodations tailored to your needs.',
   },
 ]
 
@@ -63,7 +63,7 @@ export default function Services() {
           }}
         />
         <div className="relative bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10">
-          <h2 className="text-4xl font-bold mb-20 text-center">Why Modia Properties</h2>
+          <h2 className="text-4xl font-bold mb-20 text-center">Why Choose GATEX</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, i) => (
               <motion.div
